@@ -1,4 +1,4 @@
-// pages/about/abput.js
+// pages/profile/profile.js
 Page({
 
   /**

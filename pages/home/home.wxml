@@ -1,3 +1,16 @@
 <!--pages/home/home.wxml-->
-<text>hello world</text>
-<button class='btn'>点击</button>
+<!-- 1、使用逻辑层.js文件中的数据 -->
+<text>我的名字是：{{name}}</text>
+
+<!-- 2、渲染列表数据：wx:for
+引用的时候直接使用item，就是代表循环的每一项
+-->
+<view wx:for='{{student}}'>{{item.name}}</view>
+
+<!-- 3、点击事件  
+bindtap:按钮点击事件
+方法名不需要使用{{}}
+-->
+<text>当前的数据：{{counter}}</text>
+<button size='mini' bindtap='handleAddClick'>+</button>
+<button size='mini'>-</button>

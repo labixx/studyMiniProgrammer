@@ -1,6 +1,1 @@
 /* pages/home/home.wxss */
-.btn{
-  width:100px;
-  border:1px solid black;
-
-}

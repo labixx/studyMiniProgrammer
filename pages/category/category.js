@@ -1,4 +1,4 @@
-// pages/about/ahout.js
+// pages/category/category.js
 Page({
 
   /**
