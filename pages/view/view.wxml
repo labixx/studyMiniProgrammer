@@ -1,0 +1,13 @@
+<!--pages/view/view.wxml-->
+<text>view组件</text>
+<!--hover-class：设置组件被摁下去触发的样式 -->
+<view class="nomal" hover-class="viewHover">视图1</view>
+<!-- hover-stay-time：鼠标摁下多久出现点击态样式 -->
+<view hover-stay-time="{{0}}"></view>
+<!-- hover-stay-time:鼠标摁下去然后松开后保留多久点击态，默认为400ms -->
+<view hover-stay-time="{{0}}"></view>
+<!-- hover-stop-propagation:阻止父元素出现点击态，当点击子元素时，阻止父元素也成为点击态 -->
+<view class="parentEle" hover-class="parentHover">
+  父元素
+  <view class="sonEle" hover-class="sonHover" hover-stop-propagation>子元素1</view>
+</view>

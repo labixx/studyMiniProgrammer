@@ -1,0 +1,16 @@
+<!--pages/button/button.wxml-->
+<text>pages/button/button.wxml</text>
+<text>button组件\n</text>
+<!-- size:设置按钮的大小，可选值：default/mini -->
+<button size="mini">按钮1</button>
+<!-- type:设置按钮的类型，可选值：default/primary/warn -->
+<button size="mini" type="primary">按钮2</button>
+<button size="mini" type="warn">按钮2</button>
+<!-- plain:设置按钮的镂空效果,默认值为false -->
+<button size='mini' plain>按钮3</button>
+<!-- loding:设置按钮出现加载样式,默认值为false -->
+<!-- 这个可以再逻辑层设置一个变量，当触发某个事件时把这个loading设置true -->
+<button size='mini' loading="{{true}}">按钮4</button>
+<!-- hover-class	:按钮被按下去的样式 -->
+<!-- 再小程序里面没有：hover/：active这样的伪类 -->
+<button hover-class	="btnHover">按钮5</button>

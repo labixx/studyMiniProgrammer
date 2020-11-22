@@ -1,0 +1,13 @@
+<!--pages/image/image.wxml-->
+<text>image组件/n</text>
+<!--src:图片的引用  -->
+<image src="/assets/img/LYF.jpg"/>
+<!-- lazy-load:图片的懒加载，小程序是当图片进入手机的上中下屏幕的范围内，就会开始进行加载图片， -->
+<!-- bindload：图片加载完成事件 -->
+<image wx:for="{{10}}" src="/assets/img/LYF.jpg" lazy-load="{{true}}"	 bindload="handleImageLoad"/>
+<!-- show-menu-by-longpress	：开启长按图片显示识别小程序码菜单 -->
+<text>-----------------</text>
+<image src="/assets/img/LYF.jpg" show-menu-by-longpress="{{true}}" />
+<!-- 补充：调wx.choseImage()，可以让用户进行选择图片 -->
+<button bindtap="selectImage">选择图片</button>
+<image wx:for="{{imgList}}" src="{{item}}"></image>

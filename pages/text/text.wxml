@@ -1,0 +1,19 @@
+<!--pages/text.wxml-->
+<text>内置组件-text\n</text>
+<!-- 内置组件：text -->
+
+ <!-- 1、text组件是行内元素 -->
+ <text>我的名字是蜡笔小新</text>
+ 
+ <!-- 2、text组件的属性：selectable,默认为false,当设置为true时，可以进行选择进行复制等操作 -->
+ <text selectable="{{true}}">我的名字是小红\n</text>
+ <text selectable>我的名字是小红\n</text>
+ 
+ <!-- 3、、text组件的属性：space，显示连续空格，有3个可选值 ，emsp/ensp/nbsp,默认为nbsp-->
+ <text space="ensp">ensp 设置为中文字符的空格的一半大小\n</text>
+ <text space="emsp">emsp 设置为中文字符的空格大小\n</text>
+ <text space="nbsp">nbsp 设置为根据中文字符设置空格大小\n</text>
+
+ <!-- 4、text组件的属性：decode,是否解码，默认为false,当从后台获取的数据可能会出现类似：&gt;这个是解码之后就是大于号的意思 -->
+ <text>5 &gt;3 \n</text>
+ <text decode='{{true}}'>5 &gt;3 \n</text>

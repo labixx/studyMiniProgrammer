@@ -1,0 +1,4 @@
+/* pages/button/button.wxss */
+.btnHover{
+  background-color: aqua;
+}

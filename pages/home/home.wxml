@@ -14,3 +14,9 @@ bindtap:按钮点击事件
 <text>当前的数据：{{counter}}</text>
 <button size='mini' bindtap='handleAddClick'>+</button>
 <button size='mini'>-</button>
+
+<!--点击按钮获取 用户信息： open-type='getUserInfo' bindgetuserinfo='触发事件' -->
+<button size='mini' open-type='getUserInfo' bindgetuserinfo="handleUserInfo">用户授权</button>
+
+<!-- 通过<open-data></open-data>组件展示用户信息 -->
+<open-data type='userNickName'></open-data>

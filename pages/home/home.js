@@ -1,4 +1,5 @@
 // pages/home/home.js
+const appInstance=getApp();
 Page({
 
   /**
@@ -25,6 +26,15 @@ Page({
        counter:this.data.counter+1,
      });
      console.log(this.data.counter);
+     //获取app.js文件中的数据
+     const appInstance=getApp();
+     console.log(appInstance.global);
+  },
+
+  //点击获取用户信息
+  handleUserInfo(event){
+    console.log("用户授权");
+    console.log(event);
   },
 
 

@@ -1,11 +1,17 @@
 {
   "pages": [
-   "pages/home/home",
-   "pages/cart/cart",
-   "pages/category/category",
-   "pages/profile/profile"
+    "pages/input/input",
+    "pages/view/view",
+    "pages/image/image",
+    "pages/button/button",
+    "pages/text/text",
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/category/category",
+    "pages/profile/profile"
+
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#ff5777",
     "navigationBarTitleText": "supermall",
     "navigationBarTextStyle": "black",
@@ -15,29 +21,29 @@
   },
   "tabBar": {
     "selectedColor": "#ff5777",
-    "list":[
+    "list": [
       {
-        "pagePath":"pages/home/home",
-        "text":"首页",
-        "iconPath":"assets/img/tabbar/home.png",
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/img/tabbar/home.png",
         "selectedIconPath": "assets/img/tabbar/home_active.png"
       },
       {
-        "pagePath":"pages/category/category",
-        "text":"分类",
-        "iconPath":"assets/img/tabbar/category.png",
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/img/tabbar/category.png",
         "selectedIconPath": "assets/img/tabbar/category_active.png"
       },
       {
-        "pagePath":"pages/cart/cart",
-        "text":"关于",
-        "iconPath":"assets/img/tabbar/cart.png",
+        "pagePath": "pages/cart/cart",
+        "text": "关于",
+        "iconPath": "assets/img/tabbar/cart.png",
         "selectedIconPath": "assets/img/tabbar/cart_active.png"
       },
       {
-        "pagePath":"pages/profile/profile",
-        "text":"我的",
-        "iconPath":"assets/img/tabbar/profile.png",
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/img/tabbar/profile.png",
         "selectedIconPath": "assets/img/tabbar/profile_active.png"
       }
     ]

@@ -1,0 +1,31 @@
+/* pages/view/view.wxss */
+.nomal{
+  width:100px;
+  height:100px;
+  background-color:blue;
+}
+.viewHover{
+  width:200px;
+  height:200px;
+  background-color:red;
+}
+.parentEle{
+  width:400px;
+  height:400px;
+  background-color:pink;
+}
+.sonEle{
+  width:200px;
+  height:200px;
+  background-color:purple;
+}
+.parentHover{
+width:200px;
+height:200px;
+background-color:rgb(143, 64, 77);
+}
+.sonHover{
+  width:100px;
+  height:100px;
+  background-color:rgb(164, 206, 14);
+}
