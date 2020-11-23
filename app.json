@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/weui/weui",
     "pages/wxfor/wxfor",
     "pages/wxif/wxif",
     "pages/scrollview/scrollview",
