@@ -1,0 +1,10 @@
+<!--pages/wxfor/wxfor.wxml-->  
+<text>wx:for组件</text>
+<!-- 1、wx:for：循环遍历数据 -->
+<view wx:for="{{['苹果','梨子','桃子']}}" wx:key="index">{{item}}</view>
+<!-- 2、wx:key:提高遍历性能 -->
+<view wx:for="{{['苹果','梨子','桃子']}}" wx:key="index">{{item}}</view>
+<!-- 3、为item/index取别名:wx:for-item="a"-->
+<view wx:for="{{['苹果','梨子','桃子']}}" wx:for-item="a" wx:for-index="num"  wx:key="num">{{a}}</view>
+
+<map></map>

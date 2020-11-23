@@ -1,0 +1,20 @@
+<!--pages/wxif/wxif.wxml-->
+<text>pages/wxif/wxif.wxml</text>
+<!-- wx:if   ：条件判断,为真则创建元素进行显示-->
+<!-- 
+wx:if
+wxx:elif
+wx:else
+ -->
+<text>wx：if</text>
+<view wx:if="{{score>90}}">优秀</view>
+<view wx:elif="{{score>70}}">良好</view>
+<view wx:elif="{{score>60}}">及格</view>
+<view wx:else="{{score>40}}">不及格</view>
+<!-- 类似的语法使用还有：hideden -->
+<!-- hidden与wx:if的区别：hidden本质是通过设置display:none进行隐藏，
+  而wx:if为false时则不会创建这个元素，为true时则创建元素，
+  所以，hidden的性能更高，需要频繁的进行元素显示与掩藏，建议使用hidden
+ -->
+<view hidden="{{false}}">hidden显示</view>
+<view wx:if="{{true}}">wx:if显示</view>

@@ -1,0 +1,13 @@
+<!--pages/scrollview/scrollview.wxml-->
+<text>sroll-view局部滚动</text>
+<!-- scroll-x：开启横向滚动，需要配合横向滚动样式 -->
+        <scroll-view class="scroll-view_H"  scroll-x bindrefresherrefresh="handleRefresh">
+          <view class="scroll-view-item_H " wx:key="index" wx:for="{{10}}">a</view>
+        </scroll-view>
+
+<text>scroll-y：纵向滚动</text>
+        <!-- scroll-y:开启纵向滚动，需要配合纵向滚动样式 -->
+        <!-- scroll-top	:设置滚动到多少位置，会滚动到顶部 -->
+        <scroll-view class="content2" scroll-y  bindscroll="handleScroll" scroll-top="{{100}}" 	paging-enabled>
+          <view class="contentItem2 " wx:key="index"  wx:for="{{10}}">b</view>
+        </scroll-view>

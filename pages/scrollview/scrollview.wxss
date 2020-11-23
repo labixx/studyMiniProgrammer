@@ -1,0 +1,24 @@
+/* 设置scroll-x:横向滚动的样式 */
+.scroll-view_H{
+  white-space: nowrap;
+  border:1px solid black;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width:200px;
+  height:100px;
+  background-color: aqua;
+  margin-left:20px;
+}
+/* scroll-y:纵向滚动样式 */
+.content2{
+  width:100%;
+  height:200px;
+  margin-top:20px;
+  border:1px solid black;
+}
+.contentItem2{
+  width:100px;
+  height:200px;
+  background-color: aqua;
+}

@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/wxfor/wxfor",
+    "pages/wxif/wxif",
+    "pages/scrollview/scrollview",
     "pages/input/input",
     "pages/view/view",
     "pages/image/image",

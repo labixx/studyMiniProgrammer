@@ -1,2 +1,22 @@
 <!--pages/input/input.wxml-->
-<text>pages/input/input.wxml</text>
+<text>input组件/n</text>
+<!-- value -->
+<input value="请输入内容"/>
+<!-- type: 设置输入内容弹出的键盘，text/idcard/number/digit-->
+<input type="idcard"/>
+<!--confirm-type：键盘右下角的文字显示内容，可选值：send/ -->
+<input type='text' confirm-type="send"/>
+<!-- password :设置为密码类型 -->
+<input  password/>
+<!-- placeholder:占位符 ； placeholder-class：占位符类 ；placeholder-style：占位符的样式 -->
+<input placeholder="请输入内容" placeholder-class="content" placeholder-style="font-size:'24px';background-color:yellow"/>
+<!-- disabled:禁用 -->
+<input disabled/>
+<!-- focus:自动聚焦 -->
+<input focus value="自动给聚焦"  hold-keyboard/>
+<!-- confirm-hold	-->
+<input confirm-hold	 value="点击键盘右下角按钮时是否保持键盘不收起"/>
+<!-- cursor: -->
+<input cursor="{{10}}" value="指定focus时的光标位置"/>
+<!-- hold-keyboard : -->
+<!-- <input 	 value="focus时，点击页面的时候不收起键盘"/> -->
