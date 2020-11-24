@@ -1,22 +1,20 @@
-// pages/weui/weui.js
+// pages/import/import.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-username:"小红",
-userage:2
-
-
+    username:'小红',
+    userage:333
   },
-
+btnClick(){
+  console.log("触发按钮点击");
+},
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
-  },
+ 
 
   /**
    * 生命周期函数--监听页面初次渲染完成

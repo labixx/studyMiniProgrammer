@@ -1,0 +1,17 @@
+<!-- import导入会被引用 -->
+<template name="template1">
+  <view>
+    <!-- <button bindtap="btnclick">点击</button> -->
+    <view>
+      <text>名字是:{{name}}</text>
+    </view>
+    <view>
+      <text>年龄是：{{age}}</text>
+    </view>
+  </view>
+</template>
+
+<!-- include导入会被引入 -->
+<view>
+  <text>上空的飞机奇偶位王菲菲</text>
+</view>

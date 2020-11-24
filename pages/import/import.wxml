@@ -1,0 +1,64 @@
+<!-- 1、wxml进行引入： -->
+<!-- 
+1.1、import 进行导入，
+语法1：<import src="引入的路径"
+意义：主要是导入template,不能进行递归导入
+/>
+ -->
+<!-- 补充t：emplate模板:提高代码的复用性 -->
+<!--
+模板定义名字：<template name="模板名称"></template>
+使用模板：<template is="模板名称" data="{{key:value,key2:value}}"></template>  
+key：就是再模板中
+再定义模板时候可以进行引用js中的数据，这时候使用模板的时候就以data进行告诉模板显示的数据
+定义的模板不会被渲染出来，只有使用的时候才会，
+-->
+<!-- 定义模板 -->
+<template name="temp1">
+  <view>
+    <!-- <include src="/template/temp1.wxml"></include> -->
+    <text>名字是{{name}}</text>
+    <text>年龄是{{age}}</text>
+  </view>
+</template>
+<!-- 使用模板 -->
+<template is="temp1" data="{{name:username,age:userage}}"></template>
+
+<!-- 定义模板这个可以单独抽到一个wxml模板中，以import的方式进行引入 -->
+<import src="/template/temp1.wxml"/>
+
+<template is="template1" data="{{name:username,age:userage}}">
+  <!-- 不能进行递归导入 -->
+  <!-- <template is="temp2"></template> -->
+</template>
+ <!-- 
+  1.2、include进行导入，可导入引入的文件中除了template模板之外的组件
+  include的位置可以随意放，再template里面也可以放，include放在哪里就再哪里显示
+  -->
+  <include src="/template/temp1.wxml"></include>
+
+  <!-- wxs文件 -->
+  <!-- 
+    1、wxs文件格式就是小程序里面相当于vue里面的computed或者filter属性，可以对部分数据进行处理
+    2、单独创建一个wxs格式的文件，进行编辑这个代码
+    注意：编辑好的代码记得再文件中进行导出，要不然引入不会成功
+    module.exports={
+      key：value,
+      key:value
+    }
+    可以看wxs/wxs1.wxs文件
+    3、再需要使用的文件中以<wxs></wxs>标签进行引入
+    src:引入的文件的路径
+    module:对于module.exports导出的对象取得名字
+    语法：<wxs src="wxs文件路径" mmodule="对象名称"></wxs>
+注意：引入wxs文件不能更实用绝对路径，会显示找不到文件，需要使用相对路径
+4、那再需要使用的地方直接以对象名称.属性名称就可以使用了
+   -->
+  <!-- 
+    不能使用绝对路径
+    <import src=" /wxs/wxs1.wxs" module="info"/>
+    -->
+    <wxs src="../../wxs/wxs1.wxs" module="info"/>
+  <view>
+    <text>获取的总数是：{{info.sum(1,2)}}</text>
+  </view>

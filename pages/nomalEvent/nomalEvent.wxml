@@ -1,0 +1,54 @@
+<!--pages/nomalEvent/nomalEvent.wxml-->
+<text>pages/nomalEvent/nomalEvent.wxml</text>
+<!-- 常见的事件类型 -->
+<!-- 
+  handletouchstart：点击开始
+  handletouchmove：点击移动
+  handletouchend：点击结束
+  handletap：点击
+  handlelongpress：点击屏幕，并停留350s离开屏幕，推荐使用这个
+  handlelongtap：点击屏幕，并停留350s离开屏幕，不推荐使用这个
+ -->
+<view class="outter" 
+bindtouchstart="handletouchstart"
+ bindtouchmove="handletouchmove"
+ bindtouchend="handletouchend"
+ bindtap="handletap"
+ bindlongpress="handlelongpress"
+ bindlongtap="handlelongtap"
+> 外层盒子
+</view>
+
+<!-- 事件的捕获与事件冒泡 -->
+<!-- 
+  bindtap:事件会一层层进行传递事件
+  catchtap:不会发生事件冒泡，阻止事件冒泡，但是我们默认是希望发生事件冒泡的，所以一般还是使用bind来触发事件
+ -->
+<view class="outter" 
+ bindtap="handleouttertap">
+  外层盒子
+  <view class="inner"
+ bindtap="handleinnertap">
+    里层盒子
+  </view>
+</view>
+<!-- catchtap,类似于catch的事件是不会发生事件捕获和事件冒泡的 -->
+<view class="outter" 
+ bindtap="handleouttertap">
+  外层盒子
+  <view class="inner"
+ catchtap="handleinnertap">
+    里层盒子
+  </view>
+</view>
+
+<!-- 事件的参数进行传递 -->
+<!-- 
+以data-数据名的形式形式进行传参，如下面的:data-item="{{item}}"
+然后再事件的回调中，event里面的currentTarget里面的dataaset,event.currentTarget.dataset
+ -->
+<view>
+  <view wx:for="{{['a','c','e']}}" wx:key="index">
+    <button size="mini" bindtap="eventClick" border data-item="{{item}}" data-index="{{index}}">点击</button>
+  </view>
+</view>

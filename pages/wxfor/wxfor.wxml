@@ -7,4 +7,3 @@
 <!-- 3、为item/index取别名:wx:for-item="a"-->
 <view wx:for="{{['苹果','梨子','桃子']}}" wx:for-item="a" wx:for-index="num"  wx:key="num">{{a}}</view>
 
-<map></map>

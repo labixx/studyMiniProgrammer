@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/nomalEvent/nomalEvent",
+    "pages/import/import",
     "pages/weui/weui",
     "pages/wxfor/wxfor",
     "pages/wxif/wxif",

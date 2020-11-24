@@ -1,0 +1,12 @@
+//wxs：里面的代码实际意义就是类似与vue里面的computed/fileter，用来处理一些数据
+var message="你好啊";
+var title="看电视的服务";
+function getSum(num1,num2){
+  return num1+num2
+}
+// 进行导出内容，别的文件可以进行使用
+module.exports={
+  message:message,
+  title:title,
+  sum:getSum,
+}

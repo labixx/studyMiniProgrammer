@@ -1,2 +1,9 @@
 <!--pages/weui/weui.wxml-->
-<text>pages/weui/weui.wxml</text>
+<!-- 1、block标签：存在意义就是 包裹一些元素进行循环遍历，但是这个block元素不会显示出来-->
+<block wx:for="{{5}}" wx:key="index">
+  <button size="mini">按钮{{item}}</button>
+  <span>文本{{item}}</span>
+</block>
+<!-- 2、weui：小程序官方的ui库 -->
+
+

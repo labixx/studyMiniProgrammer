@@ -1,0 +1,12 @@
+/* pages/nomalEvent/nomalEvent.wxss */
+.outter{
+  margin-top:20px;
+  width:200px;
+  height:200px;
+  background-color:aquamarine;
+}
+.inner{
+  width:100px;
+  height:100px;
+  background-color: red;
+}
