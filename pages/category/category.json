@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mycpn1":"/components/my-cpn1/mycpn1"
+  },
    "navigationBarTitleText": "分类",
    "enablePullDownRefresh": true
 }

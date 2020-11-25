@@ -1,1 +1,5 @@
 /* pages/category/category.wxss */
+.userNameTitle{
+  color:red;
+  font-size: 24rpx;
+}

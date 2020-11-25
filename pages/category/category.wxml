@@ -1,2 +1,10 @@
 <!--pages/category/category.wxml-->
 <text>pages/category/category.wxml</text>
+<!-- 再这里进行组件的使用 -->
+<!-- 自定义组件显示内容 -->
+<!-- <mycpn1 title="userNameTitle" name="小李子" age='22'></mycpn1> -->
+<mycpn1 class="cpn1" name="{{username}}" age='22'  bind:btnClick="handlebtnClick"></mycpn1>
+
+<!---->
+<view>当前数据是{{counter}}</view>
+<button bind:tap="parentClick">父页面点击</button>

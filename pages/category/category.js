@@ -2,6 +2,18 @@
 Page({
   //catgory页面的数据初始化
   data: {
+    username:'小李子',
+    counter:0,
+  },
+  handlebtnClick(){
+    console.log("触发点击事件");
+    this.setData({
+      counter:this.data.counter+1,
+    });
+  },
+  parentClick(){
+   // console.log(this.selectComponent(".cpn1"));
+   this.selectComponent(".cpn1").editName();
   },
   //onLoad:页面初次加载
   onLoad(){

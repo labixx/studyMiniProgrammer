@@ -54,5 +54,6 @@
       }
     ]
   },
+  "usingComponents": {},
   "sitemapLocation": "sitemap.json"
 }

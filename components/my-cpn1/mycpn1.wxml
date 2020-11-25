@@ -1,0 +1,19 @@
+<!--components/my-cpn1/mycpn1.wxml-->
+<!-- 组件 -->
+<!-- 自定义组件 -->
+<view>
+<text>我是标题\n</text>
+<text>我是内容\n</text>
+</view>
+
+<!--需要在组件的properties中定义该属性，然后在page引用的组件中进行定义该属性显示的内容，这样就可以让page自定义该组件中显示内容  -->
+<!-- externalClasses:自定义样式 -->
+<view>
+<text class="title">我的名字是：{{name}}</text>
+<text>我的年龄是：{{age}}</text>
+</view>
+
+<!-- 让组件向外传递事件 -->
+<button bind:tap="btnClick">点击</button>
+
+
