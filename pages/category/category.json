@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "mycpn1":"/components/my-cpn1/mycpn1"
+    "mycpn1":"/components/my-cpn1/mycpn1",
+    "mycpn2":"/components/my-cpn2/my-cpn2"
   },
    "navigationBarTitleText": "分类",
    "enablePullDownRefresh": true

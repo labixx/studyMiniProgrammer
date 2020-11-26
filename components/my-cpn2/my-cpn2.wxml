@@ -1,0 +1,13 @@
+<!--components/my-cpn2/my-cpn2.wxml-->
+<!-- 定义插槽 -->
+<view>
+<view>
+<slot name="left"></slot>
+</view>
+<view>
+  <slot>wwwwww</slot>
+</view>
+<view>
+  <slot name="right"></slot>
+</view>
+</view>

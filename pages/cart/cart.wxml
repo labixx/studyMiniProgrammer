@@ -1,2 +1,18 @@
 <!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<button size="mini" bind:tap="handleBtnClick">点击，发送网络请求</button>
+
+
+<!-- 触发showToast： -->
+<button size="mini" bind:tap="handleShowToast">触发showToast</button>
+
+<!-- 触发 ShowModal:-->
+<button size="mini" bind:tap="handleShowModal">触发ShowModal</button>
+
+<!-- 触发 ShowLoading:-->
+<button size="mini" bind:tap="handleShowLoading">触发ShowLoading</button>
+
+<!-- 触发 ShowActionSheet:-->
+<button size="mini" bind:tap="handleShowActionSheet">触发ShowActionSheet</button>
+
+<!-- 手动设置分享按钮:设置open-type="share"就会触发onShareAppMessage这个函数 -->
+<button size="mini" open-type="share">分享</button>

@@ -8,3 +8,15 @@
 <!---->
 <view>当前数据是{{counter}}</view>
 <button bind:tap="parentClick">父页面点击</button>
+
+<!-- slot插槽 -->
+<!-- 
+1、定义slot插槽，可给插槽取名字：name="插槽名字"
+2、使用具名插槽：slot="使用的插槽名字"
+3、注意：如果使用多个插槽：需要再components中的options属性里面定义：mul
+ -->
+ <mycpn2>
+   <text slot="left">哈哈哈哈哈</text>
+   <text>哼哼鞥</text>
+   <text slot="right">呵呵呵呵呵呵</text>
+ </mycpn2>

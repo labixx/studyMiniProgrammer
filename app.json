@@ -42,7 +42,7 @@
       },
       {
         "pagePath": "pages/cart/cart",
-        "text": "关于",
+        "text": "购物车",
         "iconPath": "assets/img/tabbar/cart.png",
         "selectedIconPath": "assets/img/tabbar/cart_active.png"
       },
