@@ -14,8 +14,8 @@
     "pages/home/home",
     "pages/cart/cart",
     "pages/category/category",
-    "pages/profile/profile"
-
+    "pages/profile/profile",
+    "pages/navigator/navigator"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",

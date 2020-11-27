@@ -1,4 +1,17 @@
 <!--pages/image/image.wxml-->
+
+<!-- //这个按钮触发返回功能 -->
+<button bindtap="handleHomeBack">返回</button>
+
+
+
+
+
+
+
+
+
+
 <text>image组件/n</text>
 <!--src:图片的引用  -->
 <image src="/assets/img/LYF.jpg"/>
@@ -11,3 +24,8 @@
 <!-- 补充：调wx.choseImage()，可以让用户进行选择图片 -->
 <button bindtap="selectImage">选择图片</button>
 <image wx:for="{{imgList}}" src="{{item}}"></image>
+
+<!--  -->
+<navigator open-type="navigateBack" delta="1">返回</navigator>
+
+

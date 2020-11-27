@@ -1,7 +1,42 @@
+import request from './network/index';
 App({
   //
+  globalDate:{
+    token:'',
+  },
   //onLaunch(options){}:小程序初始化执行
   onLaunch(options){
+//小程序登录:1、使用wx.login()获取code
+wx.login({
+  success:(res)=>{
+    console.log("-------------");
+    console.log(res)
+    const code=res.code;
+    wx.request({
+      url:'http:123.207.32.32:3000/login',
+      method:"post",
+      data:{
+        code
+      },success:(res=>{
+        console.log();
+      })
+    })   
+
+    console.log("---------------");
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
     console.log("小程序进行初始化运行onLaunch",options);
     //使用wx.request({}),可以在该生命周期发送网络请求
     // wx.request({

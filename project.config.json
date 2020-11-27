@@ -68,6 +68,12 @@
         {
           "name": "购物车",
           "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "跳转",
+          "pathName": "pages/navigator/navigator",
           "scene": null
         }
       ]

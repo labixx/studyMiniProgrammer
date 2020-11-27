@@ -16,3 +16,5 @@
 
 <!-- 手动设置分享按钮:设置open-type="share"就会触发onShareAppMessage这个函数 -->
 <button size="mini" open-type="share">分享</button>
+
+<!--  跳转-->

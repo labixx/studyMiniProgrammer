@@ -30,9 +30,11 @@ Page({
     console.log("触发里面的点击事件，handleinnertap");
   },
   eventClick(event){
-
 console.log(event);
 const item =event.currentTarget.dataset.item;
 console.log("传过来的参数",item);
+  },
+  onLoad(options){
+    console.log(options);
   }
 })

@@ -1,0 +1,40 @@
+<!--pages/navigator/navigator.wxml-->
+
+<!-- navigator跳转：类似a标签，默认不能跳转到设置了tabbar的页面，是跳转不过去的-->
+<navigator url="../nomalEvent/nomalEvent">默认跳转</navigator>
+<!-- <navigator url="../home/home">默认跳转</navigator>   跳转不过去 -->  
+<navigator url="../image/image">默认跳转</navigator>
+
+<!--  open-type="redirect" ：所要跳转的页面不能是tabbar页面，且左上角不会出现返回图标，关闭当前页面进行跳转的-->
+<navigator open-type="redirect" url="../image/image">redirect条状</navigator>
+<!-- <navigator open-type="redirect" url="../home/home">redirect条状</navigator>  不能跳转 -->
+
+
+<!-- open-type="switchTab" ：就是跳转到tabbar页面的,不能跳转到除了tabbar页面之外的页面，并会关闭其他除了tabbar的页面-->
+<navigator open-type="switchTab" url="../home/home">switchTab跳转</navigator>
+<!-- <navigator open-type="switchTab" url="../image/image">switchTab跳转</navigator> 不能跳转 -->
+
+<!-- open-type="reLaunch":关闭所有页面，进行跳转页面，什么页面都能跳转-->
+<navigator open-type="reLaunch" url="../home/home">relaunch跳转</navigator>
+<navigator open-type="reLaunch" url="../image/image">relaunch跳转</navigator>
+
+<!-- 使用api跳转 -->
+<!-- wx.navigateTo:与<navigator></navigator>标签一样 -->
+<button bind:tap="handleBtnClick">使用wx.navigateTo</button>
+
+<!-- wx.redirectTo与open-type="redirect"功能一样 -->
+<button bind:tap="handleBtnClick2">使用wx.redirectTo</button>
+
+<!-- wx.redirectTo与open-type="redirect"功能一样  -->
+<button bind:tap="handleBtnClick3">使用wx.switchTab</button>
+
+<!-- wx.redirectTo与open-type="reLanch"功能一样  -->
+<button bind:tap="handleBtnClick4">使用wx.reLanch</button>
+
+<!-- 再路径中传参：路径+?key=value&key=value2 -->
+<navigator url="../nomalEvent/nomalEvent?name='兄案例'&age='888'">路径传参数</navigator>
+
+<h2>{{title}}</h2>
+
+<!-- 这个按钮进行跳转 -->
+<button bind:tap="handleImagePush">跳转到图片界面</button>
